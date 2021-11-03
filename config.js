@@ -20,7 +20,7 @@ var config = {
     // Site Config ====================================================
     siteTitle:              'Airframe',
     siteDescription:        'Default Dashboard ready for Development',
-    siteCannonicalUrl:      'http://localhost:4130',
+    siteCannonicalUrl:      'http://localhost:8891',
     siteKeywords:           'react dashboard seed bootstrap',
     scssIncludes:           []
 }

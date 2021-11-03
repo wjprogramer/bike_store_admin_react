@@ -43,7 +43,7 @@ module.exports = {
             index: BASE_PATH
         },
         host: '0.0.0.0',
-        port: 4130,
+        port: 8891,
     },
     name: 'client',
     // devtool: 'cheap-eval-source-map',
