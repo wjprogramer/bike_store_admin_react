@@ -1,0 +1,44 @@
+{
+  "app": {
+    "sample": "Sample",
+  
+    "----------日期時間----------": "",
+    "from":"from",
+    "to":"to ",
+    "today":"Today",
+        
+    "----------登入/註冊----------": "",
+    "login":"Log In",
+    "logout":"Log out",
+    "register":"Register",
+    "password":"Password",
+    "reset_password":"Reset password",
+
+    "----------使用者----------": "",
+    "account":"Account",
+    "user":"User",
+    "username":"Username",
+    "name":"Name",
+  
+    "----------共用----------": "",
+    "previous": "Previous",
+    "next": "Next",
+    "accept":"Accept",
+    "refuse":"Refuse",
+    "confirm":"Confirm",
+    "cancel":"Cancel",
+    "edit":"Edit",
+    "submit":"Submit",
+    "save":"Save",
+    "success":"Success",
+    "fail":"Fail"
+  },
+  "error_code" : {
+    "PERMISSION_DENIED": "Insufficient permissions",
+    "USER_EXIST": "User already exists",
+    "WRONG_ACCOUNT_PASSWORD":"Wrong username or password",
+    "WRONG_PASSWORD": "Wrong Password",
+
+    "UNKNOWN_ERROR": "Unexpected error"
+  }
+}

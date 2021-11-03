@@ -1,0 +1,44 @@
+{
+  "app": {
+    "sample":"範例",
+    
+    "----------日期時間----------": "",
+    "from":"從",
+    "to":"到 ",
+    "today":"今日",
+    
+    "----------登入/註冊----------": "",
+    "login":"登入",
+    "logout":"登出",
+    "register":"註冊",
+    "password":"密碼",
+    "reset_password":"重設密碼",
+
+    "----------使用者----------": "",
+    "account":"帳號",
+    "user":"使用者",
+    "username":"使用者名稱",
+    "name":"名稱",
+  
+    "----------共用----------": "",
+    "previous": "上一步",
+    "next": "下一步",
+    "accept":"同意",
+    "refuse":"拒絕",
+    "confirm":"確定",
+    "cancel":"取消",
+    "edit":"編輯",
+    "submit":"送出",
+    "save":"儲存",
+    "success":"成功",
+    "fail":"失敗"
+  },
+  "error_code" : {
+    "PERMISSION_DENIED": "權限不足",
+    "USER_EXIST": "使用者已存在",
+    "WRONG_ACCOUNT_PASSWORD":"帳號或密碼錯誤",
+    "WRONG_PASSWORD": "密碼錯誤",
+
+    "UNKNOWN_ERROR ": "無法預期的錯誤"
+  }
+}

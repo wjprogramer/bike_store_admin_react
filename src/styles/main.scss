@@ -1,0 +1,17 @@
+// Template airframe
+@import '~@owczar/dashboard-style--airframe/scss/style';
+
+@import "~ag-grid-community/src/styles/ag-grid.scss";
+@import "~ag-grid-community/dist/styles/ag-theme-bootstrap.css";
+
+// Third Party
+@import "~animate.css/animate.css";
+@import '~react-awesome-lightbox/build/style.css';
+@import '~react-notifications-component/dist/theme.css';
+
+// -------------- My Style --------------
+// Override airframe
+@import 'override/override-template.scss';
+@import 'override/override-third-party.scss';
+
+@import 'app.scss';
