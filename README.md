@@ -1,5 +1,13 @@
-# [Airframe](https://github.com/0wczar/airframe-react)
+# Bike Store Admin Dashboard (React JS)
 
+> 參考樣板: 
+> [repo link](https://github.com/wjprogramer/react-js-airframe-template) Commit 2075d3ffc61908395e72663c124e18e00b1b4613 [2075d3f]
+
+# Get Started
+
+- 參考 `.env-dev.env`，建立 `.env`
+
+# Airframe 樣板原始內容
 
 ## Updating Version Notes
 

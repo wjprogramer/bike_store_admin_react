@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { FETCH_DATA, FETCH_USER } from '../../reducers/FakeReducer';
+import { FETCH_DATA, FETCH_USER } from '../../redux/reducers/FakeReducer';
 
 const JayDemo1Container2 = (props) => {
   const { data, user } = props;

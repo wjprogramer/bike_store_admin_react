@@ -9,8 +9,17 @@ const TerserPlugin = require("terser-webpack-plugin");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
 
 var config = require('./../config');
+const dotenv = require('dotenv');
 
 var BASE_PATH = process.env.BASE_PATH || '/';
+
+// call dotenv and it will return an Object with a parsed key 
+const env = dotenv.config().parsed;
+// reduce it to a nice object, the same as before
+const envKeys = Object.keys(env).reduce((prev, next) => {
+    prev[`process.env.${next}`] = JSON.stringify(env[next]);
+    return prev;
+}, {});
 
 console.log("[JAY] BASE_PATH: ", BASE_PATH);
 
@@ -91,6 +100,7 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('development'),
             'process.env.BASE_PATH': JSON.stringify(BASE_PATH),
+            ...envKeys,
         }),
         new webpack.HotModuleReplacementPlugin(),
         new ExtractCssChunks(),

@@ -12,3 +12,4 @@ docs/
 
 # Jay
 node_modules_backup
+.env
