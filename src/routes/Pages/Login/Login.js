@@ -20,10 +20,15 @@ import {
 } from '../../../services';
 
 const Login = (props) => {
-    const login = (e) => {
-        e.preventDefault();
-        AuthService.staffLogin();
-        // props.actions.login();
+    const login = async(e) => {
+        try {
+            e.preventDefault();
+            await AuthService.staffLogin();
+            // props.actions.login();
+            props.history.push('/');
+        } catch (e) {
+            // TODO: exception
+        }
     }
 
     return (    
