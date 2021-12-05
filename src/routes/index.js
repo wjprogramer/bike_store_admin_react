@@ -6,9 +6,6 @@ import {
 } from 'react-router';
 
 // ----------- Pages Imports ---------------
-import NavbarOnly from './Layouts/NavbarOnly';
-import SidebarWithNavbar from './Layouts/SidebarWithNavbar';
-
 import ComingSoon from './Pages/ComingSoon';
 import Confirmation from './Pages/Confirmation';
 import Danger from './Pages/Danger';
@@ -23,9 +20,6 @@ import Timeline from './Pages/Timeline';
 // ----------- Layout Imports ---------------
 import { DefaultNavbar } from './../layout/components/DefaultNavbar';
 import { DefaultSidebar } from './../layout/components/DefaultSidebar';
-
-import { SidebarANavbar } from './../layout/components/SidebarANavbar';
-import { SidebarASidebar } from './../layout/components/SidebarASidebar';
 
 // ----------- Routes ---------------
 import MainRoutes from './MainRoutes';
@@ -61,41 +55,9 @@ export const RoutedContent = (props) => {
 
 //------ Custom Layout Parts --------
 export const RoutedNavbars  = () => (
-  <Switch>
-    { /* Other Navbars: */}
-    <Route
-      component={ SidebarANavbar }
-      path="/layouts/sidebar-a"
-    />
-    <Route
-      component={ NavbarOnly.Navbar }
-      path="/layouts/navbar"
-    />
-    <Route
-      component={ SidebarWithNavbar.Navbar }
-      path="/layouts/sidebar-with-navbar"
-    />
-    { /* Default Navbar: */}
-    <Route
-      component={ DefaultNavbar }
-    />
-  </Switch>  
+  <DefaultNavbar />
 );
 
 export const RoutedSidebars = () => (
-  <Switch>
-    { /* Other Sidebars: */}
-    <Route
-      component={ SidebarASidebar }
-      path="/layouts/sidebar-a"
-    />
-    <Route
-      component={ SidebarWithNavbar.Sidebar }
-      path="/layouts/sidebar-with-navbar"
-    />
-    { /* Default Sidebar: */}
-    <Route
-      component={ DefaultSidebar }
-    />
-  </Switch>
+  <DefaultSidebar />
 );
