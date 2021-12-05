@@ -1,6 +1,8 @@
 import axios from 'axios';
 import EnvUtility from "../EnvUtility";
 
+const _isDebugMode = process.env.NODE_ENV !== 'production';
+
 const _METHOD = Object.freeze({
   GET: 'get',
   POST: 'post',
@@ -48,8 +50,6 @@ export default class ApiUtility {
     data,
   }) => {
     let res;
-    console.log(`EnvUtility.API_DOMAIN: ${EnvUtility.API_DOMAIN}`);
-    console.log(process.env.API_DOMAIN);
     try {
       switch(method) {
         case _METHOD.GET: 
@@ -63,8 +63,9 @@ export default class ApiUtility {
         case _METHOD.DELETE:
           break; 
       }
-      console.log(res);
-      console.log(res.data);
+      if (_isDebugMode) {
+        console.log(res);
+      }
     } catch (e) {
 
     }

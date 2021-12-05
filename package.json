@@ -4,6 +4,7 @@
   "description": "[JAY] 升級 airframe template，把能升級的套件都升級，並修改 UI \nSeed project for flexible light React/Bootstrap 4 dashboards.",
   "main": "index.js",
   "homepage": "http://localhost:9000/test",
+  "proxy": "https://localhost:8083",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run start:dev",

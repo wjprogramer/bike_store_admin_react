@@ -5,11 +5,8 @@ import {
 } from 'react-router';
 
 const PrivateRoutes = ({ component: Component, reduxProps, ...rest }) => {
-  const storage = localStorage.getItem('userToken');
-
-  const {
-    ...props
-  } = props;
+  // Change to using session
+  const storage = true; // localStorage.getItem('userToken');
 
   return (
     <Route
