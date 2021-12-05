@@ -3,6 +3,8 @@ import faker from 'faker/locale/en_US';
 import _ from 'lodash';
 import PropTypes from 'prop-types';
 
+import { randomAvatar } from './../../utilities';
+
 import {
     Avatar,
     UncontrolledDropdown,
@@ -60,7 +62,7 @@ const NavbarMessages = (props) => (
                             <Media>
                                 <Media left>
                                     <Avatar.Image
-                                        src={ faker.image.avatar() }
+                                        src={ randomAvatar() }
                                         className='mr-4'
                                     />
                                 </Media>

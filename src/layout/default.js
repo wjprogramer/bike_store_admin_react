@@ -42,6 +42,7 @@ class AppLayout extends React.Component {
                     <Layout.Navbar>
                         <RoutedNavbars />
                     </Layout.Navbar>
+                    
                     { /* -------- Sidebar ------------*/ }
                     <Layout.Sidebar>
                         <RoutedSidebars />
