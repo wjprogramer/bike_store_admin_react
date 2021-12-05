@@ -5,16 +5,16 @@ import classNames from 'classnames';
 import { ThemeConsumer } from '../../../components/Theme';
 
 const logos = {
-    'white': require('./../../../images/logos/logo-white.svg').default,
-    'primary': require('./../../../images/logos/logo-primary.svg').default,
-    'success': require('./../../../images/logos/logo-success.svg').default,
-    'warning': require('./../../../images/logos/logo-warning.svg').default,
-    'danger': require('./../../../images/logos/logo-danger.svg').default,
-    'info': require('./../../../images/logos/logo-info.svg').default,
-    'indigo': require('./../../../images/logos/logo-indigo.svg').default,
-    'purple': require('./../../../images/logos/logo-purple.svg').default,
-    'pink': require('./../../../images/logos/logo-pink.svg').default,
-    'yellow': require('./../../../images/logos/logo-yellow.svg').default
+    'white': require('./../../../assets/images/logos/logo-white.svg').default,
+    'primary': require('./../../../assets/images/logos/logo-primary.svg').default,
+    'success': require('./../../../assets/images/logos/logo-success.svg').default,
+    'warning': require('./../../../assets/images/logos/logo-warning.svg').default,
+    'danger': require('./../../../assets/images/logos/logo-danger.svg').default,
+    'info': require('./../../../assets/images/logos/logo-info.svg').default,
+    'indigo': require('./../../../assets/images/logos/logo-indigo.svg').default,
+    'purple': require('./../../../assets/images/logos/logo-purple.svg').default,
+    'pink': require('./../../../assets/images/logos/logo-pink.svg').default,
+    'yellow': require('./../../../assets/images/logos/logo-yellow.svg').default
 }
 
 const getLogoUrl = (style, color) => {

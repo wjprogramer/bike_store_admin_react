@@ -11,8 +11,8 @@ import {
 
 import i18n from '../../i18n';
 
-const americaIcon = require('../../images/flags/us.png').default;
-const taiwanIcon = require('../../images/flags/tw.png').default;
+const americaIcon = require('../../assets/images/flags/us.png').default;
+const taiwanIcon = require('../../assets/images/flags/tw.png').default;
 
 const langIconStyle = {
     borderRadius: "4px",

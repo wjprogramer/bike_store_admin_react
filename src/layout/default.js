@@ -19,12 +19,12 @@ import {
 } from './../routes';
 
 const favIcons = [
-    { rel: 'icon', type: 'image/x-icon', href: require('./../images/favicons/favicon.ico').default },
+    { rel: 'icon', type: 'image/x-icon', href: require('./../assets/images/favicons/favicon.ico').default },
 
-    { rel: 'apple-touch-icon', sizes: '180x180', href: require('./../images/favicons/apple-touch-icon.png').default },
+    { rel: 'apple-touch-icon', sizes: '180x180', href: require('./../assets/images/favicons/apple-touch-icon.png').default },
 
-    { rel: 'icon', type: 'image/png', sizes: '32x32', href: require('./../images/favicons/favicon-32x32.png').default },
-    { rel: 'icon', type: 'image/png', sizes: '16x16', href: require('./../images/favicons/favicon-16x16.png').default }
+    { rel: 'icon', type: 'image/png', sizes: '32x32', href: require('./../assets/images/favicons/favicon-32x32.png').default },
+    { rel: 'icon', type: 'image/png', sizes: '16x16', href: require('./../assets/images/favicons/favicon-16x16.png').default }
 ];
 
 class AppLayout extends React.Component {
